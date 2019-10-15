@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PADIKOOE</title>
+    <link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+</head>
+<body>
+    <div class="loginbox">
+    <img src="img/index.jpg" class="avatar">
+        <h1>LOGIN</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" id="Username" required placeholder="Email or Username">
+            <p>Password</p>
+            <input type="password" id="password" required placeholder="Password">
+            <input type="submit" id="" value="Login" onclick="masuk();">
+            <a href="#">Loss your password?</a><br>
+            <a href="register.html">Don't have an account?</a>
+        </form>
+
+        <script>
+            function masuk(){
+                var Username = document.getElementById("Username").value;
+                var password = document.getElementById("password").value;
+                if((Username == "username") && (password == "1234")){
+                    alert("Congratulation")
+                }else{
+                    alert("Wrong Password or Username")
+                }
+            }
+        </script>
+
+    </div>
+</body>
+</html
