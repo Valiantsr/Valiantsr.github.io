@@ -1,14 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
- 
 body {
-	background: #eee;
+	background-image: url("img/wallpaper.jpg");
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	width: 100%;
 }
  
 hr {
 	border:0;
-	background:#dedede;
+	/* background:#dedede; */
 	height:1px;
 }		
  
@@ -26,19 +26,19 @@ header .deskripsi{
 }
  
 .wrap {
-	width: 950px;
-	margin:25px auto;
+	width: 100%;
+	margin: auto;
 }
  
 nav.menu ul {
 	overflow:hidden;
 	color:#fff;
 	list-style: none;
-	float: top
-	padding:0;
-	width: 910px;
+	float: top;
+	padding:0 ;
+	width: 100%;
 	margin:0 0 0;
-	background: #00FF00;
+	/* background: #00FF00; */
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
@@ -47,10 +47,13 @@ nav.menu ul {
 nav.menu ul li {
 	margin:0;
 	float:left;
+	padding: 10px 0;
 }
 
 nav.menu ul b{
-	padding:25px;
+	padding:25px 0 40px 0;
+	margin-right: 475px;
+	margin-left: 20px;
 	display:block;
 	font-weight:600;
 	font-size: 28px;
@@ -59,7 +62,7 @@ nav.menu ul b{
 	transition: all 0.5s ease;
 	text-decoration: black;
 }
- 
+
 nav.menu ul a {
 	padding:25px;
 	display:block;
@@ -69,16 +72,37 @@ nav.menu ul a {
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	text-decoration: black;
+	float: right;
+}
+
+nav.menu ul g{
+	padding:25px;
+	display:block;
+	margin-left: 200px;
+	font-weight:600;
+	font-size: 18px;
+	color: black;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: black;
+	float: right;
 }
  
 nav.menu ul a:hover {
-	text-decoration: underline;
+	text-decoration: yellow;
 	background:white;
+	cursor: pointer;
+	border-radius: 25px;
+}
+
+nav.menu ul a:hover {
+	text-decoration: yellow;
 }
  
 .sidebar {
 	float:right;
-	width:275px;
+	width:350px;
+	padding-right: 100px;
 }
  
 .sidebar .widget {
@@ -111,29 +135,35 @@ nav.menu ul a:hover {
 }
  
 .blog {
-	float:left;
+	float:top center;
 }
  
+.background img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 .conteudo {
-	width:600px;
-	padding:25px;
-	margin:20px auto;
+	text-align: justify;
+	width:95%;
+	height: 250px;
+	padding: 0;
+	margin: 0 0 15px 20px;
 	background: #fff;
 	border:1px solid #dedede;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	/* -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35); */
 }
  
-.conteudo img {
-	min-width: 650px;
-	margin:0 0 25px -25px;
-	max-width: 650px;
+.post {
+	float: left;
+	width: 30%;
+	height: 100%;
 }
  
 .conteudo h1 {
 	padding:0;
-	margin:0 0 15px;
+	margin-left: 20px;
 	font-weight: normal;
 	color: #666;
 	font-family: Georgia;
@@ -148,6 +178,7 @@ nav.menu ul a:hover {
 	transition: all 0.5s ease;
 	text-decoration: none;
 	font-weight: 700; 
+	float: bottom;
 }
  
 .conteudo .continue-lendo:hover {
@@ -160,29 +191,23 @@ nav.menu ul a:hover {
 	margin: -10px 0 15px;
 	text-transform: uppercase;
 }
+
 .bottom {
-	float: left;
-	bottom: 0;
-	width: 1348px;
-	height: 90px;
-	margin: 0 auto;
-	color: white;
-	background: #00FF00;
-}
-
-.bottom p{
-	float: left;
-	font-size: 18px;
-	color: solid white;
-	text-align: left;
-}
-
-.bottom b{
-	font-size: 28px;
-	float: right
+	overflow:hidden;
+	color:rgb(12, 12, 12);
+	list-style: none;
+	float: top;
+	padding:0 ;
+	width: 100%;
+	height: 100px;
+	margin:0;
+	/* background: #00FF00; */
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 }
  
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
  
 	.header {
 		position:inherit;
@@ -227,16 +252,17 @@ nav.menu ul a:hover {
 	.conteudo {
 		float:inherit;
 		margin:0 auto 25px;
-		width:101%;
+		width:100%;
+		height: 100%;
 		border:1px solid #dedede;
 		padding:5%;  
 		background: #fff;
 	}
  
 	.conteudo img {
-		max-width: 110%;
-		margin:0 0 25px -5%;
-		min-width: 110%;
+		max-width: 100%;
+		/* margin:0 0 25px -5%; */
+		min-width: 50%;
 	}
  
 	.conteudo .continue-lendo:hover {
