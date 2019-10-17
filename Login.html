@@ -11,28 +11,16 @@
     <div class="loginbox">
     <img src="img/index.jpg" class="avatar">
         <h1>LOGIN</h1>
-        <form>
+        <form action="#" method="POST" onsubmit="validasi()">
             <p>Username</p>
             <input type="text" id="Username" required placeholder="Email or Username">
             <p>Password</p>
-            <input type="password" id="password" required placeholder="Password">
+            <input type="password" id="password" required placeholder="Password" on keyup="passwordStrength(this.value)">
             <input type="submit" id="" value="Login" onclick="masuk();">
             <a href="#">Loss your password?</a><br>
             <a href="register.html">Don't have an account?</a>
         </form>
-
-        <script>
-            function masuk(){
-                var Username = document.getElementById("Username").value;
-                var password = document.getElementById("password").value;
-                if((Username == "username") && (password == "1234")){
-                    alert("Congratulation")
-                }else{
-                    alert("Wrong Password or Username")
-                }
-            }
-        </script>
-
     </div>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html
