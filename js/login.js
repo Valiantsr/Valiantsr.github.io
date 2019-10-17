@@ -1,27 +1,28 @@
-
-function validasi() {
-    var nama = document.getElementById("nama").value;
+function validation() {
+    var nama = document.getElementById("Username").value;
     var password = document.getElementById("password").value;
     if (nama != "" && password !="") {
         alert('login berhasil');
+        window.location="index.html";
     }else{
-  alert('Anda harus mengisi data dengan lengkap !');
+        alert('Anda harus mengisi data dengan lengkap !');
     }
 }
 
 function validasiregistrasi(){
-var nama = document.getElementById("nama").value;
+var nama = document.getElementById("Username").value;
 var password = document.getElementById("password").value;
 var email = document.getElementById("email").value;
-if (nama != "" && password !="" && email !="") {
-  alert('login berhasil');
-    }else{
-  alert('Anda harus mengisi data dengan lengkap !');
+var repass = document.getElementById("repass").value;
+if (nama != "" && password !="" && email !="" && repass!="") {
+    alert('login berhasil');
+}else{
+    alert('Anda harus mengisi data dengan lengkap !');
     }
 }
 
 var input = document.getElementById("password");
-var text = document.getElementById("text");
+var text = document.getElementById("Username");
 input.addEventListener("keyup", function(event) {
 
 if (event.getModifierState("CapsLock")) {

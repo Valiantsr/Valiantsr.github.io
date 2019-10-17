@@ -5,6 +5,24 @@ body {
 	height: 100%;
 	width: 100%;
 }
+.box{
+    width:300px;
+    height:200px;
+    background:lime;
+    margin-right: 80px;
+    color: solid white;
+    display: inline-block;
+    margin-left: 60px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+.box p{
+    font-size: 26px;
+    color: solid white;
+    margin-top: 80px;
+    margin-left: 60px;
+    float: top;
+}
  
 hr {
 	border:0;
@@ -52,7 +70,7 @@ nav.menu ul li {
 
 nav.menu ul b{
 	padding:25px 0 40px 0;
-	margin-right: 450px;
+	margin-right: 475px;
 	margin-left: 20px;
 	display:block;
 	font-weight:600;
@@ -64,9 +82,9 @@ nav.menu ul b{
 }
 
 nav.menu ul a {
-	padding: 17px;
+	padding:16px;
 	display:block;
-	margin:10px 0 0 0;
+	margin:10px 0px 0 0px;
 	font-weight:bold;
 	font-size: 18px;
 	color: black;
@@ -208,7 +226,7 @@ nav.menu ul a:hover {
 	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 }
  
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1260px) {
  
 	.header {
 		position:inherit;
@@ -288,13 +306,30 @@ nav.menu ul a:hover {
 	.conteudo .continue-lendo:hover {
 		margin-left:0;
 	}
+	.box{
+		width:200px;
+		height:130px;
+		background:lime;
+		color: solid white;
+		display: inline-block;
+		margin: au;
+		margin-bottom: 30px;
+		border-radius: 20px;
+	}
+	.box p{
+		font-size: 18px;
+		color: solid white;
+		margin-top: 50px;
+		margin-left: 40px;
+		float: top;
+	}
  
  
 }
  
-@media screen and (max-width: 680px ) {
+@media screen and (max-width: 600px ) {
  
-	nav.menu ul li a {
+	/* nav.menu ul li a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
@@ -303,8 +338,8 @@ nav.menu ul a:hover {
 		text-transform: uppercase;
 		transition: all 0.5s ease;
 		text-decoration: black;
-		/* float: right; */
-	/* }
+		float: right;
+	}
 	
  
 	.sidebar {
@@ -321,6 +356,22 @@ nav.menu ul a:hover {
 	.conteudo.background img {
 		width: 100%;
 		height: auto;
-		margin:5px;
+		margin:5px; */
 	}			
-}
+	/* .box{
+		width:200px;
+		height:130px;
+		background:lime;
+		color: solid white;
+		display: inline-block;
+		margin: 0 40px 40px 150px;
+		border-radius: 20px;
+	}
+	.box p{
+		font-size: 18px;
+		color: solid white;
+		margin-top: 50px;
+		margin-left: 40px;
+		float: top;
+	}
+} */

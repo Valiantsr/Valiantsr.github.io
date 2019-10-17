@@ -11,11 +11,14 @@
     <div id="login-box">
     <div class="left-box">
         <h1>REGISTER</h1>
-        <input type="text" name="username" placeholder="Nama Lengkap">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="password" placeholder="Re-Password">
-        <input type="submit" name="submit" value="Daftar">
+        <form action="#" method="POST" onsubmit="validasiregistrasi()">
+        <input type="text" name="username" id="Username" placeholder="Nama Lengkap">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <span style="float:right;" id="status"></span>
+        <input type="password" name="password" id="password" placeholder="Password" onkeyup="passwordStrength(this.value)">
+        <input type="password" name="password" id="repass" placeholder="Re-Password">
+        <input type="submit" name="submit" id="submit" value="Daftar">
+        </form>
     </div>
     <div class="right-box">
         <span class="signinwith">Masuk menggunakan<br/>Media Sosial</span>
@@ -25,5 +28,6 @@
     </div>
     <div class="or">Atau</div>
     </div>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>
