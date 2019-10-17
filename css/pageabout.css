@@ -1,6 +1,5 @@
 body{
-    background-image: url("img/wallpaper.jpg")
-    background-color: #ffffff;
+    
     margin: 0;
     font-family: sans-serif;
     width: 100%;
@@ -29,7 +28,7 @@ body{
 
 .menu ul li b{
     display: inline-block;
-    margin-right: 630px;
+    margin-right: 400px;
     padding-top: 26px;
     font-size: 30px;
     font-weight: bold;
@@ -37,18 +36,17 @@ body{
 
 .menu ul li a{
     margin-right: 5px;
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
-    padding: 4px;
+    padding: 17px;
     font-weight: bold;
 }
 
 .menu a:hover{
-    background-color: #00FF00;
-    color: #ffffff;
+    background: #fff;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 25px;
 }
 
 .blog{
