@@ -3,7 +3,7 @@ function validation() {
     var password = document.getElementById("password").value;
     if (nama != "" && password !="") {
         alert('login berhasil');
-        window.location="index.html"
+        window.location="index.html";
     }else{
         alert('Anda harus mengisi data dengan lengkap !');
     }
@@ -16,6 +16,7 @@ var email = document.getElementById("email").value;
 var repass = document.getElementById("repass").value;
 if (nama != "" && password !="" && email !="" && repass!="") {
     alert('login berhasil');
+    window.location="index.html";
 }else{
     alert('Anda harus mengisi data dengan lengkap !');
     }
