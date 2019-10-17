@@ -3,7 +3,6 @@ function validation() {
     var password = document.getElementById("password").value;
     if (nama != "" && password !="") {
         alert('login berhasil');
-        window.location="index.html";
     }else{
         alert('Anda harus mengisi data dengan lengkap !');
     }
