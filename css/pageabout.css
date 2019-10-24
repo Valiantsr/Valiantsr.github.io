@@ -1,5 +1,5 @@
 body{
-    
+    background-image: url("img/wallpaper.jpg");
     margin: 0;
     font-family: sans-serif;
     width: 100%;
@@ -81,3 +81,4 @@ body{
 	/* -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55); */
+}
