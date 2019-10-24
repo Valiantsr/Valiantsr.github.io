@@ -146,9 +146,9 @@ nav.menu ul a:hover {
 
 .conteudo {
 	text-align: justify;
-	width:80%;
-	padding: 0;
-	margin-left: 11%;
+	width:90%;
+/* 	padding: 0;
+	margin-left: 11%; */
 	background: #fff;
 	border:1px solid #dedede;
 	/* -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
