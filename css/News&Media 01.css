@@ -76,7 +76,7 @@ nav.menu ul a {
 	/* float: right; */
 }
 
-/* nav.menu ul g{
+nav.menu ul g{
 	padding:25px;
 	display:block;
 	margin-left: 200px;
@@ -87,7 +87,7 @@ nav.menu ul a {
 	transition: all 0.5s ease;
 	text-decoration: black;
 	float: right;
-} */
+}
  
 nav.menu ul a:hover {
 	text-decoration: yellow;
