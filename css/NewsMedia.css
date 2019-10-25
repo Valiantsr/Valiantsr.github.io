@@ -136,16 +136,13 @@ nav.menu a:hover {
 
 .bottom {
 	overflow:hidden;
-	color:rgb(12, 12, 12);
+	color:white;
 	list-style: none;
 	float: top;
 	padding:0 ;
 	width: 100%;
 	height: 100px;
-	margin:0;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
-	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	background: #00ff00;
 }
  
 @media screen and (max-width: 900px) {
