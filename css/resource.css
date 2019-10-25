@@ -9,19 +9,18 @@ body {
     width:300px;
     height:200px;
     background:lime;
-    margin-right: 80px;
+    margin-right: 60px;
     color: solid white;
     display: inline-block;
-    margin-left: 60px;
-	margin-bottom: 20px;
+    margin-left: 80px;
+	margin-bottom: 60px;
 	border-radius: 20px;
 }
 .box p{
+	text-align: center;
     font-size: 26px;
-    color: solid white;
-    margin-top: 80px;
-    margin-left: 60px;
-    float: top;
+	color: solid white;
+	padding-top: 50px;
 }
  
 hr {
