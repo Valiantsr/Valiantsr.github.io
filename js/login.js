@@ -22,14 +22,14 @@ if (nama != "" && password !="" && email !="" && repass!="") {
     }
 }
 
-var input = document.getElementById("password");
+var input = document.getElementById("Password");
 var text = document.getElementById("Username");
 input.addEventListener("keyup", function(event) {
 
 if (event.getModifierState("CapsLock")) {
-text.style.display = "block";
+    text.style.display = "block";
     } else {
-text.style.display = "none"
+    
     }
 })
 
