@@ -322,7 +322,7 @@ nav.menu ul b{
  
 @media screen and (max-width: 600px ) {
  
-		nav.menu ul li a {
+		menu ul a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
