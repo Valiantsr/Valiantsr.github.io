@@ -22,6 +22,7 @@ body {
     margin-top: 80px;
     margin-left: 60px;
     float: top;
+    text-decoration:none;
 }
  
 hr {
@@ -296,6 +297,7 @@ nav.menu ul a:hover {
 		margin-top: 50px;
 		margin-left: 40px;
 		float: top;
+		text-decoration:none;
 	}
  
  
