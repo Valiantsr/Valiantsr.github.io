@@ -242,7 +242,7 @@ menu a:hover {
 	transition: all 0.5s ease;
 	text-decoration: black;
 	}
-	menu ul a {
+	.menu ul a {
 	padding:10px;
 	display:block;
 	/* margin: 0 15px 0 15px; */
