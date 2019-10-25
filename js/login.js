@@ -15,7 +15,7 @@ var password = document.getElementById("password").value;
 var email = document.getElementById("email").value;
 var repass = document.getElementById("repass").value;
 if (nama != "" && password !="" && email !="" && repass!="") {
-    alert('login berhasil');
+    alert('Penndaftaran Berhasil');
     window.location="index.html";
 }else{
     alert('Anda harus mengisi data dengan lengkap !');
