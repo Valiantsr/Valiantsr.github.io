@@ -1,28 +1,8 @@
 body {
-	background-image: url("img/wallpaper.jpg");
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 	height: 100%;
 	width: 100%;
-}
- 
-hr {
-	border:0;
-	/* background:#dedede; */
-	/* height:1px; */
-}		
- 
-header{
-	text-align: center;
-	color: #232323;
-}
- 
-header .judul{
-	font-size: 17pt;
-}
- 
-header .deskripsi{
-	font-size: 11pt;
 }
  
 .wrap {
@@ -30,7 +10,7 @@ header .deskripsi{
 	margin: auto;
 }
  
-nav.menu ul {
+.menu ul {
 	overflow:hidden;
 	color:#fff;
 	list-style: none;
@@ -38,19 +18,18 @@ nav.menu ul {
 	padding:0 ;
 	width: 100%;
 	margin:0 0 0;
-	/* background: #00FF00; */
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 }
  
-nav.menu ul li {
+.menu ul li {
 	margin:0;
 	float:left;
 	padding: 10px 0;
 }
 
-nav.menu ul b{
+.menu ul b{
 	padding:25px 0 40px 0;
 	margin-right: 475px;
 	margin-left: 20px;
@@ -73,71 +52,17 @@ nav.menu ul b{
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	text-decoration: none;
-	/* float: right; */
-}
-
-nav.menu ul g{
-	padding:25px;
-	display:block;
-	margin-left: 200px;
-	font-weight:600;
-	font-size: 18px;
-	color: black;
-	text-transform: uppercase;
-	transition: all 0.5s ease;
-	text-decoration: black;
-	float: right;
 }
  
-menu a:hover {
+.menu a:hover {
 	background:#00ff00;
 	cursor: pointer;
 	border-radius: 25px;
 	color: white;
 }
- 
-.sidebar {
-	float:right;
-	width:350px;
-	padding-right: 100px;
-}
- 
-.sidebar .widget {
-	padding:25px;
-	margin:20px 0 20px;
-	background:#fff;
-	border-bottom: 2px solid #fff;
-	transition: all 0.5s ease;
-}
- 
-.sidebar .widget:hover {
-	border-bottom: 2px solid white;
-}
- 
-.sidebar .widget h2 {
-	padding:0;
-	margin:0 0 15px;
-	color:black;
-	font-size: 18px;
-	font-weight:800;
-	text-transform: uppercase;
-}
- 
-.sidebar .widget p {
-	font-size: 14px;
-}
- 
-.sidebar .widget p:last-child {
-	margin:0;
-}
- 
+
 .blog {
 	float:top center;
-}
- 
-.background img{
-	width: 100%;
-	margin-bottom: 10px;
 }
 
 .conteudo {
@@ -147,12 +72,6 @@ menu a:hover {
 	border:1px solid #dedede;
 	/* -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35); */
-}
- 
-.post {
-	float: left;
-	width: 30%;
-	height: 100%;
 }
  
 .conteudo h1 {
@@ -165,25 +84,6 @@ menu a:hover {
  
 .conteudo p:last-child {
 	margin: 0;
-}
- 
-.conteudo .continue-lendo {
-	color:#000;
-	transition: all 0.5s ease;
-	text-decoration: none;
-	font-weight: 700; 
-	float: bottom;
-}
- 
-.conteudo .continue-lendo:hover {
-	margin-left:10px;
-}
- 
-.post-info {
-	float: right;
-	font-size: 12px;
-	margin: -10px 0 15px;
-	text-transform: uppercase;
 }
 
 .bottom {
@@ -199,34 +99,20 @@ menu a:hover {
 }
  
 @media screen and (max-width: 900px) {
- 
-	.header {
-		position:inherit;
-	}
- 
+
 	.wrap {
 		width: 100%;
 		margin:25px auto;
 	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
- 
-	.sidebar .widget {
-		padding:5%;
-	}
- 
-	nav.menu ul {
+	.menu ul {
 		width: 100%;
 	}
  
-	nav.menu ul {
+	.menu ul {
 		float:inherit;
 	}
  
-	nav.menu ul li {
+	.menu ul li {
 		float:inherit;
 		margin:auto;
 	}
@@ -242,17 +128,15 @@ menu a:hover {
 	transition: all 0.5s ease;
 	text-decoration: black;
 	}
-	.menu ul a {
+	menu ul a {
 	padding:10px;
 	display:block;
-	/* margin: 0 15px 0 15px; */
 	font-weight:bold;
 	font-size: 12px;
 	color: #00ff00;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	text-decoration:none;
-	/* float: right; */
 	}	
  
 	.blog {
@@ -271,15 +155,8 @@ menu a:hover {
  
 	.conteudo img {
 		max-width: 100%;
-		/* margin:0 0 25px -5%; */
 		min-width: 50%;
 	}
- 
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
- 
- 
 }
  
 @media screen and (max-width: 680px ) {
@@ -293,24 +170,3 @@ menu a:hover {
 		text-transform: uppercase;
 		transition: all 0.5s ease;
 		text-decoration: none;
-		/* float: right; */
-	/* }
-	
- 
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
- 
-	.conteudo {
-		margin:auto;
-	}
- 
-	.conteudo.background img {
-		width: 100%;
-		height: auto;
-		margin:5px;
-	}			
-}
