@@ -63,16 +63,16 @@ nav.menu ul b{
 	text-decoration: black;
 }
 
-nav.menu ul a {
+.menu ul a {
 	padding: 17px;
 	display:block;
 	margin:10px 0 0 0;
 	font-weight:bold;
 	font-size: 18px;
-	color: black;
+	color: #00ff00;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
-	text-decoration: black;
+	text-decoration: none;
 	/* float: right; */
 }
 
@@ -89,11 +89,11 @@ nav.menu ul g{
 	float: right;
 }
  
-nav.menu ul a:hover {
-	text-decoration: yellow;
-	background:white;
+.menu a:hover {
+	background:#00ff00;
 	cursor: pointer;
 	border-radius: 25px;
+	color: white;
 }
 
 nav.menu ul a:hover {
