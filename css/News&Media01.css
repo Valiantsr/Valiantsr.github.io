@@ -10,7 +10,7 @@ body {
 	margin: auto;
 }
  
-.menu ul {
+nav.menu ul {
 	overflow:hidden;
 	color:#fff;
 	list-style: none;
@@ -23,13 +23,13 @@ body {
 	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 }
  
-.menu ul li {
+nav.menu ul li {
 	margin:0;
 	float:left;
 	padding: 10px 0;
 }
 
-.menu ul b{
+nav.menu ul b{
 	padding:25px 0 40px 0;
 	margin-right: 475px;
 	margin-left: 20px;
@@ -42,7 +42,7 @@ body {
 	text-decoration: black;
 }
 
-.menu ul a {
+nav.menu ul a {
 	padding: 17px;
 	display:block;
 	margin: 10px 0 0 0;
@@ -54,7 +54,7 @@ body {
 	text-decoration: none;
 }
  
-.menu a:hover {
+nav.menu a:hover {
 	background:#00ff00;
 	cursor: pointer;
 	border-radius: 25px;
@@ -104,19 +104,19 @@ body {
 		width: 100%;
 		margin:25px auto;
 	}
-	.menu ul {
+nav.menu ul {
 		width: 100%;
 	}
  
-	.menu ul {
+nav.menu ul {
 		float:inherit;
 	}
  
-	.menu ul li {
+nav.menu ul li {
 		float:inherit;
 		margin:auto;
 	}
-	nav.menu ul b{
+nav.menu ul b{
 	padding:10px 0 15px 0;
 	margin-right: 100px;
 	margin-left: 10px;
@@ -128,7 +128,7 @@ body {
 	transition: all 0.5s ease;
 	text-decoration: black;
 	}
-	menu ul a {
+nav.menu ul a {
 	padding:10px;
 	display:block;
 	font-weight:bold;
@@ -161,7 +161,7 @@ body {
  
 @media screen and (max-width: 680px ) {
  
-	.menu ul a {
+	nav.menu ul a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
