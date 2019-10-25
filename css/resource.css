@@ -17,11 +17,13 @@ body {
 	margin-top: 50px;
 	border-radius: 20px;
 }
-.box p{
+.box a{
+	text-decoration: none;
 	text-align: center;
-    font-size: 26px;
+	padding-top: 80px;
+	font-size: 28px;
 	color: #fff;
-	padding-top: 50px;
+	display: block;
 }
  
 hr {
