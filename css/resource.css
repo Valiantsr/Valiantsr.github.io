@@ -17,11 +17,13 @@ body {
 	border-radius: 20px;
 }
 .box a{
+	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
     font-size: 26px;
-    color: solid white;
+    color: #fff;
 	display: block;
+	padding-top: 75px;
 }
  
 hr {
