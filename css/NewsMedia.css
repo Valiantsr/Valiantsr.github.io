@@ -6,6 +6,23 @@ body {
 	width: 100%;
 }
  
+hr {
+	border:0;
+}		
+ 
+header{
+	text-align: center;
+	color: #232323;
+}
+ 
+header .judul{
+	font-size: 17pt;
+}
+ 
+header .deskripsi{
+	font-size: 11pt;
+}
+ 
 .wrap {
 	width: 100%;
 	margin: auto;
@@ -42,7 +59,7 @@ nav.menu ul b{
 	text-decoration: black;
 }
 
-nav.menu ul a {
+.menu ul a {
 	padding: 17px;
 	display:block;
 	margin: 10px 0 0 0;
@@ -52,19 +69,6 @@ nav.menu ul a {
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	text-decoration: none;
-}
-
-nav.menu ul g{
-	padding:25px;
-	display:block;
-	margin-left: 200px;
-	font-weight:600;
-	font-size: 18px;
-	color: black;
-	text-transform: uppercase;
-	transition: all 0.5s ease;
-	text-decoration: black;
-	float: right;
 }
  
 nav.menu a:hover {
@@ -93,12 +97,41 @@ nav.menu a:hover {
 	border:1px solid #dedede;
 }
  
+.post {
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+ 
 .conteudo h1 {
 	padding:0;
 	margin-left: 20px;
 	font-weight: normal;
 	color: #666;
 	font-family: Georgia;
+}
+ 
+.conteudo p:last-child {
+	margin: 0;
+}
+ 
+.conteudo .continue-lendo {
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+	float: bottom;
+}
+ 
+.conteudo .continue-lendo:hover {
+	margin-left:10px;
+}
+ 
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
 }
 
 .bottom {
@@ -180,9 +213,16 @@ nav.menu a:hover {
 		min-width: 50%;
 	}
  
+	.conteudo .continue-lendo:hover {
+		margin-left:0;
+	}
+ 
+ 
+}
+ 
 @media screen and (max-width: 680px ) {
  
-nav.menu ul li a {
+	nav.menu ul li a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
@@ -191,4 +231,4 @@ nav.menu ul li a {
 		text-transform: uppercase;
 		transition: all 0.5s ease;
 		text-decoration: black;
-}
+	}
