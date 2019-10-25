@@ -73,13 +73,10 @@ body{
 .bottom {
     text-align: center;
 	overflow:hidden;
-	color:rgb(12, 12, 12);
+	color:white;
 	list-style: none;
 	width: 100%;
 	height: auto;
 	margin-top:40px;
-	background: #00FF00;
-	/* -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
-	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55); */
+	background: #00FF00;\
 }
