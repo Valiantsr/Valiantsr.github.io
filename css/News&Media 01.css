@@ -63,37 +63,37 @@ nav.menu ul b{
 	text-decoration: black;
 }
 
-nav.menu ul a {
+.menu ul a {
 	padding: 17px;
 	display:block;
 	margin: 10px 0 0 0;
 	font-weight:bold;
 	font-size: 18px;
-	color: black;
+	color: #00ff00;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
-	text-decoration: black;
+	text-decoration: none;
 	/* float: right; */
 }
 
-nav.menu ul g{
+.menu ul g{
 	padding:25px;
 	display:block;
 	margin-left: 200px;
 	font-weight:600;
 	font-size: 18px;
-	color: black;
+	color: #00ff00;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
-	text-decoration: black;
+	text-decoration: none;
 	float: right;
 }
  
-nav.menu ul a:hover {
-	text-decoration: yellow;
-	background:white;
+.menu a:hover {
+	background:#00ff00;
 	cursor: pointer;
 	border-radius: 25px;
+	color:white;
 }
 
 nav.menu ul a:hover {
@@ -192,17 +192,14 @@ nav.menu ul a:hover {
 
 .bottom {
 	overflow:hidden;
-	color:rgb(12, 12, 12);
+	color:white;
 	list-style: none;
 	float: top;
 	padding:0 ;
 	width: 100%;
 	height: 100px;
 	margin:0;
-	/* background: #00FF00; */
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
-	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	background: #00FF00;
 }
  
 @media screen and (max-width: 900px) {
