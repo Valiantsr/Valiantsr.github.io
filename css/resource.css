@@ -209,7 +209,7 @@ nav.menu ul b{
 
 .bottom {
 	overflow:hidden;
-	color:rgb(12, 12, 12);
+	color:white;
 	list-style: none;
 	float: top;
 	padding:0 ;
@@ -263,16 +263,16 @@ nav.menu ul b{
 	transition: all 0.5s ease;
 	text-decoration: black;
 	}
-	nav.menu ul a {
+	.menu ul a {
 	padding:10px;
 	display:block;
 	/* margin: 0 15px 0 15px; */
 	font-weight:bold;
 	font-size: 12px;
-	color: black;
+	color: #00FF00;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
-	text-decoration: black;
+	text-decoration: none;
 	/* float: right; */
 	}	
  
@@ -322,20 +322,20 @@ nav.menu ul b{
  
 @media screen and (max-width: 600px ) {
  
-	/* nav.menu ul li a {
+/* 		menu ul a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
 		font-size: 10px;
-		color: black;
+		color: #00FF00;
 		text-transform: uppercase;
 		transition: all 0.5s ease;
-		text-decoration: black;
+		text-decoration: none;
 		float: right;
-	}
+	} */
 	
  
-	.sidebar {
+	/*.sidebar {
 		display:none
 	}
 	.post-info {
