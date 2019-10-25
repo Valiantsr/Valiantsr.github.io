@@ -121,11 +121,11 @@ body{
 		width: 100%;
 	}
  
-	nav.menu ul {
+	.menu ul {
 		float:inherit;
 	}
  
-	nav.menu ul li {
+	.menu ul li {
 		float:inherit;
 		margin:auto;
 	}
@@ -144,14 +144,12 @@ body{
 	.menu ul a {
 	padding:10px;
 	display:block;
-	/* margin: 0 15px 0 15px; */
 	font-weight:bold;
 	font-size: 12px;
 	color: #00ff00;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	text-decoration:none;
-	/* float: right; */
 	}	
  
 	.blog {
@@ -169,21 +167,14 @@ body{
  
 	.conteudo img {
 		max-width: 100%;
-		/* margin:0 0 25px -5%; */
 		min-width: 50%;
 		
 	}
- 
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
- 
- 
 }
  
 @media screen and (max-width: 680px ) {
  
-/* 	.menu ul a {
+	nav.menu ul a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
@@ -191,25 +182,4 @@ body{
 		color: #00ff00;
 		text-transform: uppercase;
 		transition: all 0.5s ease;
-		text-decoration: none; */
-		/* float: right; */
-	/* }
-	
- 
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
- 
-	.conteudo {
-		margin:auto;
-	}
- 
-	.conteudo.background img {
-		width: 100%;
-		height: auto;
-		margin:5px;
-	}			
-}
+		text-decoration: none;
