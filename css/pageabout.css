@@ -38,15 +38,16 @@ body{
     margin-right: 5px;
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: #00ff00;
     padding: 17px;
     font-weight: bold;
 }
 
 .menu a:hover{
-    background: #fff;
+    background: #00ff00;
     cursor: pointer;
     border-radius: 25px;
+    color: white;
 }
 
 .blog{
