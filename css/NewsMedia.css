@@ -6,25 +6,6 @@ body {
 	width: 100%;
 }
  
-hr {
-	border:0;
-	/* background:#dedede; */
-	/* height:1px; */
-}		
- 
-header{
-	text-align: center;
-	color: #232323;
-}
- 
-header .judul{
-	font-size: 17pt;
-}
- 
-header .deskripsi{
-	font-size: 11pt;
-}
- 
 .wrap {
 	width: 100%;
 	margin: auto;
@@ -37,8 +18,6 @@ nav.menu ul {
 	float: top;
 	padding:0 ;
 	width: 100%;
-	margin:0 0 0;
-	/* background: #00FF00; */
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
@@ -63,7 +42,7 @@ nav.menu ul b{
 	text-decoration: black;
 }
 
-.menu ul a {
+nav.menu ul a {
 	padding: 17px;
 	display:block;
 	margin: 10px 0 0 0;
@@ -73,10 +52,9 @@ nav.menu ul b{
 	text-transform: uppercase;
 	transition: all 0.5s ease;
 	text-decoration: none;
-	/* float: right; */
 }
 
-.menu ul g{
+nav.menu ul g{
 	padding:25px;
 	display:block;
 	margin-left: 200px;
@@ -89,50 +67,11 @@ nav.menu ul b{
 	float: right;
 }
  
-.menu a:hover {
+nav.menu a:hover {
 	background:#00ff00;
 	cursor: pointer;
 	border-radius: 25px;
 	color:white;
-}
-
-nav.menu ul a:hover {
-	text-decoration: yellow;
-}
- 
-.sidebar {
-	float:right;
-	width:350px;
-	padding-right: 100px;
-}
- 
-.sidebar .widget {
-	padding:25px;
-	margin:20px 0 20px;
-	background:#fff;
-	border-bottom: 2px solid #fff;
-	transition: all 0.5s ease;
-}
- 
-.sidebar .widget:hover {
-	border-bottom: 2px solid white;
-}
- 
-.sidebar .widget h2 {
-	padding:0;
-	margin:0 0 15px;
-	color:black;
-	font-size: 18px;
-	font-weight:800;
-	text-transform: uppercase;
-}
- 
-.sidebar .widget p {
-	font-size: 14px;
-}
- 
-.sidebar .widget p:last-child {
-	margin:0;
 }
  
 .blog {
@@ -152,14 +91,6 @@ nav.menu ul a:hover {
 	margin: 0 0 15px 20px;
 	background: #fff;
 	border:1px solid #dedede;
-	/* -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35); */
-}
- 
-.post {
-	float: left;
-	width: 30%;
-	height: 100%;
 }
  
 .conteudo h1 {
@@ -169,40 +100,19 @@ nav.menu ul a:hover {
 	color: #666;
 	font-family: Georgia;
 }
- 
-.conteudo p:last-child {
-	margin: 0;
-}
- 
-.conteudo .continue-lendo {
-	color:#000;
-	transition: all 0.5s ease;
-	text-decoration: none;
-	font-weight: 700; 
-	float: bottom;
-}
- 
-.conteudo .continue-lendo:hover {
-	margin-left:10px;
-}
- 
-.post-info {
-	float: right;
-	font-size: 12px;
-	margin: -10px 0 15px;
-	text-transform: uppercase;
-}
 
 .bottom {
 	overflow:hidden;
-	color:white;
+	color:rgb(12, 12, 12);
 	list-style: none;
 	float: top;
 	padding:0 ;
 	width: 100%;
 	height: 100px;
 	margin:0;
-	background: #00FF00;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
 }
  
 @media screen and (max-width: 900px) {
@@ -214,15 +124,6 @@ nav.menu ul a:hover {
 	.wrap {
 		width: 100%;
 		margin:25px auto;
-	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
- 
-	.sidebar .widget {
-		padding:5%;
 	}
  
 	nav.menu ul {
@@ -249,17 +150,15 @@ nav.menu ul a:hover {
 	transition: all 0.5s ease;
 	text-decoration: black;
 	}
-	menu ul a {
+	nav.menu ul a {
 	padding:10px;
 	display:block;
-	/* margin: 0 15px 0 15px; */
 	font-weight:bold;
 	font-size: 12px;
-	color: #00FF00;
+	color: black;
 	text-transform: uppercase;
 	transition: all 0.5s ease;
-	text-decoration: none;
-	/* float: right; */
+	text-decoration: black;
 	}	
  
 	.blog {
@@ -278,46 +177,18 @@ nav.menu ul a:hover {
  
 	.conteudo img {
 		max-width: 100%;
-		/* margin:0 0 25px -5%; */
 		min-width: 50%;
 	}
  
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
- 
- 
-}
- 
 @media screen and (max-width: 680px ) {
  
-	.menu ul a {
+nav.menu ul li a {
 		padding:10px;
 		display:block;
 		font-weight:bold;
 		font-size: 10px;
-		color: #00FF00;
+		color: black;
 		text-transform: uppercase;
 		transition: all 0.5s ease;
-		text-decoration: none;
-		/* float: right; */
-	/* }
-	
- 
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
- 
-	.conteudo {
-		margin:auto;
-	}
- 
-	.conteudo.background img {
-		width: 100%;
-		height: auto;
-		margin:5px;
-	}			
+		text-decoration: black;
 }
