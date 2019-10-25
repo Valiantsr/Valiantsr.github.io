@@ -16,7 +16,7 @@ body {
 	margin-bottom: 20px;
 	border-radius: 20px;
 }
-.box p{
+.box a{
     font-size: 26px;
     color: solid white;
     margin-top: 80px;
@@ -290,7 +290,7 @@ nav.menu ul a:hover {
 		margin-bottom: 30px;
 		border-radius: 20px;
 	}
-	.box p{
+	.box a{
 		font-size: 18px;
 		color: solid white;
 		margin-top: 50px;
