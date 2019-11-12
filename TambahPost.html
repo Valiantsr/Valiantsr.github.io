@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Post</title>
+    <link rel="stylesheet" type="text/css" href="css/TambahPost.css">
+</head>
+<body>
+    <div class="newpost" style="background-image: url('img/TambahPost.jpg')">
+        <div class="judul">
+            <h4>New Post</h4>
+        </div>
+        <div class="row">
+            <div class="tambahpost">
+                <form>
+                    <div class="add">
+                        <p>Upload Image: </p>
+                        <input type="file" name="image">
+                    </div>
+                    <div class="add">
+                        <p>News or Media Description: </p>
+                        <textarea placeholder="Add Deskripsi"></textarea>
+                    </div>
+                    <div class="tombolgabung">
+                        <button type="submit" class="tombol" onclick="alert('Saved Data')" >SAVE</button>
+                        <button type="submit" class="tombol" onclick="alert('Data have been Posted')">POST</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
