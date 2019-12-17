@@ -18,10 +18,26 @@
             <input type="password" id="password" required placeholder="Password">
             <p id="text" style="display: none;"> CAPSLOCK key is turned on!</p> 
             <input type="submit" id="submit" value="Login" onclick="validation()">
-            <a href="#">Loss your password?</a><br>
+            <a href="#" id="popup" onclick="show_popup()">Loss your password?</a><br>
             <a href="register.html">Don't have an account?</a>
         </form>
     </div>
+    <div id="isipopup">
+        <div id="popupnya">
+            <form action="#" id="forgetpass" method="post" name="forgetpass">
+                <img id="close" src="assets\img\close.png" onclick ="hide_popup()">
+                <h2 class="forget">Forgotten Your Password ?</h2>
+                <h5 class="h5">Enter your login email address below</h5>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <a onclick="check_empty()" id="submit">Request Password Reset</a>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="css/jquery-3.4.1.min.js"></script>
+<!-- <script src="assets/javascript/script.js"></script> -->
+<script src="css/popup.js"></script>
+</html>
     <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html
