@@ -66,6 +66,23 @@ body{
 .main p{
     text-align: justify;
 }
+.main .continue-lendo{
+	color:#000;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	font-weight: 700; 
+	/* float: bottom; */
+}
+ 
+.main .continue-lendo:hover {
+	margin-left:10px;
+}
+.post-info {
+	float: right;
+	font-size: 12px;
+	margin: -10px 0 15px;
+	text-transform: uppercase;
+}
 
 .sidebar{
     width: 400px;

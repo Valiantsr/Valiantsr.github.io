@@ -3,6 +3,7 @@
 <head>
 	<title>Padiku</title>
 	<link rel="stylesheet" type="text/css" href="css/NewsMedia.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -51,12 +52,9 @@
                 	style="float: left; margin: 0 8px 4px 0;"><h2>Metode Pertanian Modern di Negara Jepang</h2><p>Jepang merupakan salah satu dari negara maju yang mampu mencukupi kebutuhan pangan negaranya 
                 	tanpa harus mengimpor dari negara lain. Jepang bukanlah termasuk negara agraria, lahan pertanian dijepang pun termasuk kecil, yaitu sekitar 12% dari total daratannya, namun dengan kebijakan 
                 	politik pemerintah jepang yang berorientasi pada masalah pangan, jepang mampu membuktikan keberhasilannya dalam ketahanan pangan.Kesuburan tanah dan didukung dengan teknologinya yang maju, 
-                	jepang mampu menghasilkan berbagai produk pertanian seperti padi, kentang, jagung, buah-buahan, dan lain sebagainya.</p><br><a href="News&Media03.html" class="continue-lendo">Selengkapnya →</a></div>
-            	<div class="conteudo"><img class="irc_mi" src="https://saintif.com/wp-content/uploads/2018/07/IMG_9476.jpg" width="440" height="250" style="float: left; margin: 0 8px 4px 0;" alt="Gambar terkait">
-                	<h2>Metode Hazton Ini Mampu Hasilkan Padi Puluhan Ton.</h2><p>Metode Hazton, mungkin tidak setenar Metode Jajar Legowo atau SRI dalam hal penanaman padi. Namun, metode ciptaan dua putra 
-                	Kalimantan Barat ini merupakan harapan nyata untuk meningkatkan produktivitas pertanian, menuju swasembada pangan di Indonesia. Adalah Hazairin dan Anton Kamarudin, yang melakukan riset hebat 
-                	hingga menemukan teknik tersebut.Pada 2012, metode ini pun diperkenalkan di Kalimantan Barat, dengan nama Hazton, akronim dari Hazairin dan Anton, sang penemu.Bank Indonesia Perwakilan Kalimantan 
-                	Barat, selaku Tim Pengendali Inflasi Daerah, mendukung pengembangan penerapan metode tersebut.</p><br><a href="News&Media04.html" class="continue-lendo">Selengkapnya →</a></div>
+					jepang mampu menghasilkan berbagai produk pertanian seperti padi, kentang, jagung, buah-buahan, dan lain sebagainya.</p><br><a href="News&Media03.html" class="continue-lendo">Selengkapnya →</a></div>
+		
+					<button class="more">READ MORE</button>
         </div>
 	</div>
 	<center>
@@ -67,5 +65,44 @@
 		</p>
 	</div>
 	</center>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.more').click(function(){
+        $(".more").hide();
+        $(function() {
+            ajaxJS();
+            function ajaxJS(e) {
+              if (e) {
+                e.preventDefault();
+              }
+              $.ajax({
+                url: "https://raw.githubusercontent.com/Valiantsr/hello-world/master/dobleh.json",
+                method: "GET",
+                success: function(data) {
+                  console.log(data);
+                  data = jQuery.parseJSON(data);
+                  var html_to_append = '';
+                  $.each(data, function(i, item) {
+                    html_to_append +=
+                    '<div class="conteudo">'+'<img class="irc_mi" src='+item.img+' '+'width="440" height="250" style="float: left; margin: 0 8px 4px 0;" alt="Gambar terkait">'
+                     + 
+                     '<h2>'+item.judul+'</h2>' +
+                    '<p>'+item.isi+'</p>'+
+                    '<br><a class="continue-lendo" href='+item.link+'>Selengkapnya →</a>'+'</div></br>';
+                  });
+                  
+                  $(".blog").append(html_to_append);
+                },
+                error: function() {
+                  console.log(data);
+                }
+              });
+        
+            }
+        
+          });
+    });
+	});
+	</script>
 </body>
 </html>
