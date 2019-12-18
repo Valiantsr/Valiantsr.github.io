@@ -14,8 +14,10 @@
                 <form>
                     <div class="add">
                         <p>Upload Image: </p>
-                        <input type="file" name="image">
+                        <input class="isi0" type="file" name="image" onchange="readURL_tambahkomik(this)">
                     </div>
+                    <img id="isi" style="max-width: 150px;">
+                    <p id="isi2"></p>
                     <div class="add">
                         <p>News or Media Description: </p>
                         <textarea placeholder="Add Deskripsi"></textarea>
@@ -28,5 +30,7 @@
             </div>
         </div>
     </div>  
+    <script src="js/tambahpost.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
 </body>
 </html>
