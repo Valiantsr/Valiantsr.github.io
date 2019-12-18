@@ -16,7 +16,7 @@
             <input type="text" id="Username" required placeholder="Username">
             <p>Password</p>
             <input type="password" id="password" required placeholder="Password">
-            <p id="text" style="display: none;"> CAPSLOCK key is turned on!</p> 
+            <p id="text" style="display: none;"></p> 
             <input type="submit" id="submit" value="Login" onclick="validation()">
             <a href="#" id="popup" onclick="show_popup()">Loss your password?</a><br>
             <a href="register.html">Don't have an account?</a>
@@ -29,13 +29,12 @@
                 <h2 class="forget">Forgotten Your Password ?</h2>
                 <h5 class="h5">Enter your login email address below</h5>
                 <input type="email" id="email" name="email" placeholder="Email">
-                <a onclick="check_empty()" id="submitpopup">Request Password Reset</a>
+                <a href="Login.html" onclick="check_empty()" id="submitpopup">Request Password Reset</a>
             </form>
         </div>
     </div>
 </body>
 <script src="js/jquery-3.4.1.min.js"></script>
-<!-- <script src="assets/javascript/script.js"></script> -->
 <script src="js/popup.js"></script>
 <script type="text/javascript" src="js/login.js"></script>
 </html>
